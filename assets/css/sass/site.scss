@@ -1,0 +1,745 @@
+@font-face {
+	font-family: "CircularStd-Book";
+	src: url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/CircularStd-Book.woff") format("woff"),
+		url("../fonts/CircularStd-Book.ttf") format("truetype"),
+		url("../fonts/CircularStd-Book.svg#CircularStd-Book") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}  
+@font-face {
+	font-family: "CircularStd-Black";
+	src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/CircularStd-Black.woff") format("woff"),
+		url("../fonts/CircularStd-Black.ttf") format("truetype"),
+		url("../fonts/CircularStd-Black.svg#CircularStd-Black") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd-Bold";
+	src: url("../fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/CircularStd-Bold.woff") format("woff"),
+		url("../fonts/CircularStd-Bold.ttf") format("truetype"),
+		url("../fonts/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+$azul: #0563A1;
+$amarelo: #FCC90F;
+$cinza: #8A8A8A;
+$cinza-escuro: #525252;
+
+$font-book: 'CircularStd-Book';
+$font-black: 'CircularStd-Black';
+$font-bold: 'CircularStd-Bold';
+
+
+body{
+	overflow-x: hidden;
+	font-family: $font-book;
+}
+html,body{
+	height: 100%;
+}
+::-moz-selection{
+	color:white;
+	background: $azul;
+}
+::selection{
+	color:white;
+	background: $azul;
+}
+ul{
+	padding: 0;
+	margin: 0;
+
+	li{
+		list-style: none;
+	}
+}
+a{
+	transition:all .35s;
+}
+a:hover,a:focus,a:visited,a:active{
+	text-decoration:none;
+	outline:none;
+}
+p{
+	font-size: 14px;
+	line-height: 182.6%;
+	color: $cinza;
+}
+.bt-parceiro{
+	background: $amarelo;
+	border: 2px solid #fcc90f;
+	color: $azul !important;
+	font-size: 15px !important;
+	font-family: $font-bold;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: inline-block;
+	&:hover{
+		border: 2px solid #fcc90f;
+		background: none;
+		color: #fcc90f !important;
+	}
+}
+nav{
+	margin-top: 15px;
+    position: absolute;
+    z-index: 100;
+	width: 100%;
+	.menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.itens-menu{
+			ul{
+				li{
+					display: inline-block;
+					padding: 0 12px;
+					a{
+						color: white;
+						font-size: 16px;
+						&:hover{
+							color: $amarelo
+						}
+					}
+				}
+			}
+		}
+	}
+}
+header{
+	background-image: linear-gradient(100deg, #0563A1 0%, #0774BC 100%);
+	width: 100%;
+	height: 860px;
+	position: relative;
+	.mask{
+		background: url(../img/mask-header.png) no-repeat center center;
+		width: 100%;
+		height: 154px;
+		position: absolute;
+		bottom: 0;
+	}
+	.mockups{
+		position: absolute;
+		bottom: -80px;
+		right: -300px;
+		z-index: 1;
+	}
+	.info-header{
+		margin-top: 200px;
+		z-index: 2;
+		h1{
+			font-size: 55px;
+			color: white;
+			font-family: $font-bold;
+			span{
+				color: $amarelo;
+			}
+		}
+		p{
+			color: white;
+			opacity: 0.6;
+			margin-top: 20px;
+			font-size: 15px;
+		}
+		.fazer-download{
+			background: $amarelo;
+			border-radius: 8px;
+			padding: 10px 10px 10px 15px; 
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 80%;
+			margin-top: 20px;
+			span{
+				font-size: 15px;
+				color: black;
+			}
+			a{
+				color: white;
+				background: $azul;
+				font-size: 12px;
+				font-family: $font-bold;
+				border-radius: 20px;
+				padding: 6px 20px;
+				&:hover{
+					background: #004675;
+				}
+			}
+		}
+	}
+}
+.titulo{
+	h2{
+		font-size: 40px;
+		color: $cinza-escuro;
+		margin: 0;
+		font-family: $font-bold;
+		margin-bottom: 15px;
+	}
+	h3{
+		font-size: 12px;
+		letter-spacing: 0.33em;
+		color: $azul;
+	}
+}
+#vantagens{
+	padding-top: 100px;
+	.animais{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 25px;
+		.item-animal{
+			display: flex;
+			flex-direction: column;
+			padding: 0 5px;
+			align-items: center;
+			.bg{
+				width: 103px;
+				height: 60px;
+				border: 1px solid #E2E2E2;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 10px;
+				margin-bottom: 5px;
+			}
+			span{
+				font-size: 14px;
+				color: $cinza;
+			}
+		}
+	}
+	.device-mobile{
+		margin-top: 50px;
+		position: relative;
+		z-index: 1;	
+	}
+}
+#beneficios{
+	padding: 165px 0;
+	margin: 0 5%;
+	border-radius: 20px;
+	background: #F6F9FC;
+	margin-top: -100px;
+	position: relative;
+	.arrow-beneficios{
+		left: 50%;
+		transform: translateX(50%);
+		bottom: 0;
+		position: absolute;
+	}
+	.itens-beneficios{
+		.item{
+			background: #FFFFFF;
+			box-shadow: 0px 30px 40px -20px rgba(105, 105, 114, 0.3);
+			border-radius: 10px;
+			padding: 20px 30px;
+			width: 469px;
+			position: relative;
+			margin-bottom: 30px;
+			&.item-1{
+				right: 0;
+				float: right;
+			}
+			&.item-2{
+				right: 100px;
+				float: right;
+			}
+			&.item-3{
+				right: 30px;
+				float: right;
+			}
+			p{
+				margin: 0;
+			}
+		}
+	}
+}
+h4{
+	font-size: 18px;
+	color: $azul;
+	font-family: $font-bold;
+}
+.conteudo{
+	.bt-parceiro{
+		margin-top: 15px;
+	}
+}
+#detalhes{
+	.info-detalhes{
+		padding: 90px 0;
+		.itens-detalhes{
+			margin-top: 40px;
+			.item{
+				display: flex;
+				align-items: center;
+				margin-bottom: 20px;
+				.bg{
+					background: rgba(5, 100, 163, 0.1);
+					border-radius: 12px;
+					width: 90px;
+					height: 90px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-right: 15px;
+				}
+				.info{
+					p{
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	.cao{
+		text-align: right;
+		margin-top: -40px;
+	}
+}
+#ser-parceiro{
+	background-image: linear-gradient(100deg, #0563A1 0%, #0774BC 100%);
+	margin: 0 5%;
+	border-radius: 50px;
+	padding: 75px 0;
+	text-align: center;
+	position: relative;
+	.bullets1{
+		position: absolute;
+		top: 10px;
+		left: 20px;
+	}
+	.bullets2{
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
+	}
+	.titulo{
+		h2{
+			color: white;
+			span{
+				color: $amarelo;
+			}
+		}
+		p{
+			color: white;
+		}
+	}
+}
+#duvidas{
+	background-image: linear-gradient(100deg, #0563A1 0%, #0774BC 100%);
+	border-radius: 50px 50px 0 0;
+	margin-top: 265px;
+	position: relative;
+	height: 812px;
+	.mockups-duvidas{
+		position: absolute;
+		right: 0;
+		top: -170px;
+	}
+	.titulo{
+		h3{
+			color: $amarelo;
+		}
+		h2{
+			color: white;
+		}
+	}
+	.bullets1{
+		position: absolute;
+		top: 10px;
+		left: 20px;
+	}
+	.info-duvidas{
+		margin-top: 70px;
+	}
+	.collapse-duvidas{
+		margin-top: 50px;
+		#accordion{
+			.card{
+				background: none;
+				border: none;
+				margin-bottom: 10px;
+				.card-header{
+					background: none;
+					border-radius: 0;
+					padding: 0;
+					text-decoration: none;
+					border-bottom: none;
+					a{
+						padding: 14px;
+						display: block;
+						color: white;
+						font-size: 15px;
+						background: rgba(255,255,255,.1);
+						border-radius: 8px;
+					}
+				}
+				.card-body{
+					font-size: 14px;
+					color: white;
+					line-height: 182.6%;
+					padding: 15px 0;
+				}
+			}
+		}
+	}
+}
+.btn-link:hover{
+	text-decoration: none;
+}
+#copyright{
+	margin-top: -95px;
+	.footer{
+		background: white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 10%;
+		padding: 25px 80px;
+		border-radius: 20px 20px 0 0;
+		box-shadow: 0px 33px 50px rgba(22, 18, 0, 0.15);
+		p{
+			margin: 0;
+		}
+		.documentos{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			a{
+				font-size: 14px;
+				color: $cinza;
+				padding-right: 20px;
+				&:hover{
+					color: $azul;
+				}
+			}
+		}
+		.redes-sociais{
+			display: flex;
+			a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 45px;
+				height: 45px;
+				border-radius: 8px;
+				border: 2px solid $azul;
+				margin-right: 8px;
+				&:hover{
+					background: $amarelo;
+					border: 2px solid $amarelo;
+				}
+			}
+		}
+	}
+}
+
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	background-color:rgba(5,99,161,.98);
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	a{
+		&.bt-parceiro{
+			display: inline-block;
+			margin-top: 20px;
+			width: 220px;
+		}
+	}
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+	margin-bottom: 20px;
+	&:hover{
+		color: $amarelo;
+	}
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 27px;
+    right: 135px;
+    font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay{
+		overflow-y: auto;
+	}
+	.overlay a{
+		font-size: 20px
+	}
+	.overlay .closebtn{
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+}
+.menu-mobile{
+	span{
+		font-size: 20px;
+		cursor: pointer;
+		color: white;
+		display: flex;
+		img{
+			margin-right: 10px;
+		}
+	}
+}
+/*---------- RESPONSIVO -----------*/
+@media (max-width: 1500px) {
+	header{
+		.mockups{
+			bottom: -100px;
+			right: -350px;
+			img{
+				width: 80%
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	#duvidas{
+		.mockups-duvidas{
+			right: -200px;
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#duvidas{
+		.mockups-duvidas{
+			right: -250px;
+		}
+	}
+	header{
+		.mockups{
+			bottom: -60px;
+			right: -590px;
+			img{
+				width: 70%
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#beneficios{
+		.itens-beneficios{
+			.item{
+				width: 100%;
+				&.item-1, &.item-2, &.item-3{
+					right: 0;
+				}
+			}
+		}
+		.arrow-beneficios{
+			transform: translateX(-50%);
+		}
+	}
+	.conteudo{
+		margin-bottom: 30px;
+	}
+	#detalhes{
+		.cao{
+			text-align: center;
+		}
+	}
+	#duvidas{
+		height: initial;
+		padding-bottom: 60px;
+		margin-top: 150px;
+		.mockups-duvidas{
+			img{
+				display: none;
+			}
+		}
+	}
+	#copyright{
+		margin-top: 0;
+		.footer{
+			margin: 0;
+			box-shadow: none;
+		}
+	}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	header{
+		.info-header{
+			h1{
+				font-size: 45px;
+			}
+			.fazer-download{
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: center;
+				a{
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	#beneficios{
+		.itens-beneficios{
+			.item{
+				width: 100%;
+				&.item-1, &.item-2, &.item-3{
+					right: 0;
+				}
+			}
+		}
+		.arrow-beneficios{
+			transform: translateX(-50%);
+		}
+	}
+	#detalhes{
+		.cao{
+			text-align: center;
+			img{
+				width: 60%;
+			}
+		}
+	}
+	.conteudo{
+		margin-bottom: 30px;
+	}
+	#duvidas{
+		height: initial;
+		padding-bottom: 60px;
+		margin-top: 150px;
+		.mockups-duvidas{
+			img{
+				display: none;
+			}
+		}
+	}
+	#copyright{
+		margin-top: 0;
+		.footer{
+			margin: 0;
+			box-shadow: none;
+			padding: 20px;
+			flex-wrap: wrap;
+			text-align: center;
+			justify-content: center;
+			p{
+				margin-bottom: 15px;
+			}
+			.documentos{
+				margin-bottom: 20px;
+				a{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	#vantagens{
+		.animais{
+			flex-wrap: wrap;
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	header{
+		.info-header{
+			h1{
+				font-size: 45px;
+			}
+			.fazer-download{
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: center;
+				a{
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	#beneficios{
+		.itens-beneficios{
+			.item{
+				width: 100%;
+				&.item-1, &.item-2, &.item-3{
+					right: 0;
+				}
+			}
+		}
+		.arrow-beneficios{
+			transform: translateX(-50%);
+		}
+	}
+	#detalhes{
+		.cao{
+			text-align: center;
+			img{
+				width: 60%;
+			}
+		}
+	}
+	.conteudo{
+		margin-bottom: 30px;
+	}
+	#duvidas{
+		height: initial;
+		padding-bottom: 60px;
+		margin-top: 150px;
+		.mockups-duvidas{
+			img{
+				display: none;
+			}
+		}
+	}
+	#copyright{
+		margin-top: 0;
+		.footer{
+			margin: 0;
+			box-shadow: none;
+			padding: 20px;
+			flex-wrap: wrap;
+			text-align: center;
+			justify-content: center;
+			p{
+				margin-bottom: 15px;
+			}
+			.documentos{
+				margin-bottom: 20px;
+				a{
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	#vantagens{
+		.animais{
+			flex-wrap: wrap;
+		}
+	}
+}
