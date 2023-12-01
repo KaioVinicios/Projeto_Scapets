@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scapets Feedback</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/feedbackCss.css">
+    <link href='https://fonts.googleapis.com/css?family=M PLUS Rounded 1c' rel='stylesheet'>
+    <link href="../assets/fonts/CircularStd-Bold.woff" rel="stylesheet">
+    <link rel="stylesheet" href="..\assets\css\site.css">
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+  
+    <nav data-aos="fade-down">
+        <div class="detainer">
+            <div class="lines-md">
+                <div class="up-over">
+                    <a href="../index.php"><img src="../assets/img/marca.png" alt="Marca Scapets"></a>
+                    <div class="on-the-menu">
+                        <ul>
+                            <li>
+                                <a href="quemsomos.html">Sobre a Scapets</a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">Dê o seu Feedback</a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">Perguntas Frequentes</a>
+                            </li>
+                            <li>
+                                <a href="reels.html">Reels</a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <section id="muito-menu">
+                        <a id="menu-down">
+                            <h4 class="big-button and-more">Quero Ser Parceiro!</h4>
+                        </a>
+                        <div id="bit-buttons" class="hidden">
+                            <ul class="button-group">
+                                <div class="back-bt">
+                                    <li>
+                                        <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="big-button button-group">Lojista<img src="../assets/img/store_icon.svg" class="button-img"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="big-button button-group middle-bt">Motoboy<img src="../assets/img/motorcycle_icon.svg" class="button-img"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="big-button button-group">Administrador<img src="../assets/img/admin_icon.svg" class="button-img"></a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </section> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="testando">
+    <div class="text-center feedback-head">
+        <h1 class="feedback-text">Feedback</h1>
+
+        <hr style="border-top: 2px solid #FCC90F; 
+        width: 650px;">
+    </div>
+
+    <div class="feedback-box text-center">
+        <div class="centro-feedback">
+            <p>Agradecemos por visitar nosso site! Queremos proporcionar a melhor experiência possível aos nossos usuários, e sua opinião é fundamental para nos ajudar a alcançar esse objetivo. Por favor, compartilhe seus comentários, sugestões e preocupações preenchendo o espaço abaixo. Estamos ansiosos para ouvir o que você tem a dizer.</p>
+        </div>
+    </div>
+
+
+    <div class="container my-4 feedback-form">
+        <form>
+            <div class="form-group">
+                <textarea id="feedback" class="form-control" rows="3" placeholder="Deixe aqui seu feedback como [Lojista/Motoboy]..."></textarea>
+                <button class="yellow-button" title="Enviar feedback" type="submit"></button>
+            </div>
+        </form>
+    </div>
+  </div>
+
+  <section id="copyrights">
+      <div class="container-flow">
+          <div class="lines">
+              <div class="cool-md12">
+                  <div class="down-under">
+                      <div class="docsh">
+                          <a href="../assets/img/documentos/TERMOS-E-CONDICOES-DE-USO-SCAPETS.pdf" target="_blank">
+                              Termos e Condições de Uso Scapets
+                          </a>
+                          <a href="../assets/img/documentos/POLITICA-DE-PRIVACIDADE-SCAPETS.pdf" target="_blank">
+                              Política de Privacidade Scapets
+                          </a>
+                          <a href="../assets/img/documentos/POLITICA_DE_TROCAS_E_DEVOLUCOES_SCAPETS.pdf" target="_blank">
+                              Política de Trocas e Devoluções
+                          </a>
+                      </div>
+                      <div class="social-media">
+                          <a href="https://www.facebook.com/people/scapetsbrasil/100087157000626" target="_blank">
+                              <img src="../assets/img/facebook.svg" alt="Ícone Facebook">
+                          </a>
+                          <a href="https://www.instagram.com/scapetsbrasil" target="_blank">
+                              <img src="../assets/img/instagram.svg" alt="Ícone Instagram">
+                          </a>
+                          <a href="https://www.youtube.com/@scapets/featured" target="_blank">
+                              <img src="../assets\img\youtube.svg" alt="Ícone YouTube">
+                          </a>
+                          <a href="https://www.linkedin.com/company/scapets-brasil/" target="_blank">
+                              <img src="../assets/img/linkedin.svg" alt="Ícone Linkedin">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        class collapse {
+            constructor(triggerId, targetIds) {
+                this.triggerId = triggerId;
+                this.targetId = targetIds;
+
+                this.triggerId.addEventListener('click', () => this.collapses());
+            }
+
+            collapses() {
+                this.targetId.forEach(element => element.classList.toggle('hidden'));
+            }
+        }
+
+        function makeCollapse(triggerId, targetIds) {
+            var triggerElement = document.getElementById(triggerId);
+            var targetElements = targetIds.map(id => document.getElementById(id));
+
+            new collapse(triggerElement, targetElements);
+        }
+
+        makeCollapse('menu-down', ['bit-buttons']);
+    </script>
+</body>
+</html>

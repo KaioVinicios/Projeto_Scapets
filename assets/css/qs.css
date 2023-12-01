@@ -1,0 +1,336 @@
+@font-face {
+	font-family: "CircularStd-Book";
+	src: url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype"), url("../fonts/CircularStd-Book.svg#CircularStd-Book") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd-Black";
+	src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype"), url("../fonts/CircularStd-Black.svg#CircularStd-Black") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "CircularStd-Bold";
+	src: url("../fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.ttf") format("truetype"), url("../fonts/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../img/BG-azul-grande.png);
+	background-size: cover;
+    color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	font-family: 'CircularStd-Book';
+}
+
+#qs-mvv {
+	width: 100vw;
+	height: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 32px;
+}
+
+.bubble {
+	width: 64%;
+	margin: 0 0 16px 0;
+}
+
+.bubble p {
+	text-shadow: 2px 2px 4px #865d33c2;
+}
+
+.bubble.missão {
+	width: 60%;
+}
+
+.bubble.visão {
+	width: 56%;
+}
+
+.bubble.valores {
+	width: 58%;
+}
+
+#quemSomosTitle {
+	width: 28rem;
+	justify-content: flex-start;
+	font-size: 42px;
+}
+
+#quemSomosTitle p {
+	font-family: 'CircularStd-Bold';
+    margin: 0 0 0 44px;
+}
+
+#quemSomosDescription {
+	margin-right: 8%;
+}
+
+#quemSomosDescription2 {
+	margin-left: 12%;
+	z-index: -4;
+	position: relative;
+}
+
+#missãoDescription {
+	margin-right: 5%;
+}
+
+#visãoDescription {
+	margin-right: 14%;
+}
+
+#valoresDescription {
+	margin-right: 30%;
+}
+
+.title {
+	background-color: #fcc90f;
+	cursor: pointer;
+	font-size: 40px;
+	font-weight: bold;
+	border-radius: 3rem;
+	width: 12rem;
+	text-align: center;
+	height: 94px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+	position: relative;
+	padding: 0px 8px 0px 0px;
+	box-shadow: 8;
+	box-sizing: content-box;
+	box-shadow: 4px 4px 6px;
+}
+
+.title p {
+	font-family: 'CircularStd-Bold';
+}
+
+.description {
+	padding: 10px 30px;
+	background-color: #ffffff;
+	font-weight: bold;
+	color: black;
+	border-radius: 3rem;
+	margin-top: -12px;
+	margin-left: 5%;
+	display: flex;
+	box-shadow: 6px 2px 12px;
+	margin-bottom: 6px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+#bt-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bt-parceiro {
+	background: #fcc90f;
+	border: 2px solid #fcc90f;
+	color: #0563a1;
+	font-size: 16px;
+	font-family: 'CircularStd-Bold';
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: flex;
+}
+
+#menu-collapse {
+	z-index: 1;
+}
+
+.bt-parceiro.panel-title {
+	text-align: center;
+	font-size: 18px;
+	box-shadow: 2px 2px 5px black;
+	cursor: pointer;
+}
+
+#button-list {
+	display: flex;
+	flex-direction: column;
+	width: 12rem;
+	height: 16.8rem;
+	margin-top: -6.2rem;
+}
+
+#button-list ul {
+	background-color: #fff;
+	border-radius: 26px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 0;
+	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.58);
+}
+
+.bt {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 72%;
+}
+
+.bt li {
+	margin: 8px 0px 4px 0px;
+	width: 93%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.bt-parceiro.list-group-item {
+	width: 80%;
+	padding: 2px 6px 2px 6px;
+	border-color: #0563a1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 3px 2px 4px 1px black;
+}
+
+.bt-parceiro.list-group-item:hover {
+	border: 2px solid #0563a1;
+    color: #fcc90f;
+    background: none;
+}
+
+.bt-parceiro.list-group-item.segundo-bt {
+    background: #0563a1;
+    border: 2px solid ;
+    color: #fcc90f;
+}
+
+.bt-parceiro.list-group-item.segundo-bt:hover {
+    border: 2px solid #fcc90f;
+    color: #0563a1;
+    background: none;
+}
+
+.bt-img {
+	width: 2rem;
+}
+
+nav {
+	margin-top: 15px;
+	z-index: 100;
+	width: 100%;
+}
+
+nav .menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: 0px 0px 6px 6px #4b3d3778;
+}
+nav .menu .marca img {
+	height: 56px;
+}
+nav .menu .itens-menu {
+	display: flex;
+}
+nav .menu .itens-menu ul {
+	display: flex;
+	gap: 4rem;
+	padding: 0.5rem;
+}
+nav .menu .itens-menu ul li {
+	display: flex;
+}
+nav .menu .itens-menu ul li a {
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 3px black;
+}
+nav .menu .itens-menu ul li a:hover {
+	color: #fcc90f !important;
+}
+
+#copyright {
+	margin-top: auto;
+}
+#copyright .footer {
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 10%;
+	padding: 25px 80px;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0px 33px 50px rgba(22, 18, 0, 0.15);
+	box-shadow: 2px 2px 6px 4px #2b292994;
+	text-shadow: 3px 2px 6px;
+}
+#copyright .footer p {
+	margin: 0;
+}
+#copyright .footer .documentos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#copyright .footer .documentos a {
+	font-size: 14px;
+	color: #8a8a8a;
+	padding-right: 20px;
+}
+#copyright .footer .documentos a:hover {
+	color: #0563a1;
+}
+#copyright .footer .redes-sociais {
+	display: flex;
+}
+#copyright .footer .redes-sociais a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 8px;
+	border: 2px solid #0563a1;
+	margin-right: 8px;
+	box-shadow: 2px 2px 4px 1px #0563a175;
+}
+#copyright .footer .redes-sociais a:hover {
+	background: #fcc90f;
+	border: 2px solid #fcc90f;
+	box-shadow: 2px 2px 4px 1px #4c3d0799;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+  
   <?php include '_head.php'; ?>
 
 </head>
@@ -22,37 +22,49 @@
 
   <nav data-aos="fade-down">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="menu">
-            <div class="marca">
-              <img src="assets/img/marca.png" alt="Marca Scapets">
-            </div>
+      <div class="row col-md-12" style="margin-left: -11rem;">
+          <div class="menu" style="width: 100%;display: flex;justify-content: space-evenly;align-items: end;">
+            <a href="index.php"><img src="assets/img/marca.png" alt="Marca Scapets" style="margin-right: 2rem"></a>
             <div class="itens-menu">
               <div class="menu-mobile d-lg-none">
                 <span onclick="openNav()"><img src="assets/img/menu.svg" alt="Menu">Menu</span>
               </div>
-              <ul class="d-none d-lg-block">
-                <!-- <li>
-                  <a href="#">Home</a>
+              <ul style="display: flex; gap: 4rem; padding: 0.5rem;">
+                <li>
+                  <a href="sub/quemsomos.html" class="itens_menu" style="color: white; font-size: 20px;">Sobre Scapets</a>
                 </li>
                 <li>
-                  <a href="#">Vantagens</a>
+                  <a href="sub/feedback.html" class="itens_menu" style="color: white; font-size: 20px;">Dê o seu Feedback</a>
                 </li>
                 <li>
-                  <a href="#">Diferenciais</a>
+                  <a href="sub/faq.html" class="itens_menu" style="color: white; font-size: 20px;">Perguntas Frequentes</a>
                 </li>
                 <li>
-                  <a href="#">Para Você</a>
-                </li> -->
-                <li>
-                  <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro">Quero Ser Parceiro</a>
+                  <a href="sub/reels.html" class="itens_menu" style="color: white; font-size: 20px;">Reels</a>
                 </li>
               </ul>
+              <section class="bt-area bt-menu">
+                <a data-toggle="collapse" href=".panel-collapse.collapse.parceirias">
+                  <h4 class="bt-parceiro panel-title">Quero Ser Parceiro!</h4>
+                </a>
+                <div class="panel-collapse collapse parceirias">
+                    <ul class="list-group d-none d-lg-block">
+                      <div class="bt">
+                          <li>
+                            <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro list-group-item">Lojista<img src="assets/img/store_icon.svg" class="bt-img"></a>
+                          </li>
+                          <li>
+                            <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro list-group-item segundo-bt">Motoboy<img src="assets/img/motorcycle_icon.svg" class="bt-img"></a>
+                          </li>
+                          <li>
+                            <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro list-group-item">Administrador<img src="assets/img/admin_icon.svg" class="bt-img"></a>
+                          </li>
+                      </div>
+                    </ul>
+                </div>
+              </section>
             </div>
           </div>
-        </div>
-      </div>
     </div>
   </nav>
   <header>
@@ -76,12 +88,14 @@
             </div> -->
           </div>
         </div>
+        <div class="home-video">
+          <video poster="assets/img/mockup-app.png" controls="">
+            <source src="assets/img/video_home.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
     <div class="mask"></div>
-    <div class="mockups d-none d-lg-block">
-      <img src="assets/img/mockup-app.png" alt="Mockup App">
-    </div>
   </header>
 
   <section id="vantagens">
@@ -133,12 +147,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-left">
           <div class="device-mobile" data-aos="fade-up">
             <img src="assets/img/mobile.png" alt="Tela de Telefone">
           </div>
         </div>
-      </div>
+        <div class="col-md-12 text-right">
+          <div class="device-mobile aos-init aos-animate" data-aos="fade-up">
+            <img src="assets/img/mockup-app.png" alt="Mockup App"
+          </div>
+        </div>
     </div>
   </section>
 
@@ -326,10 +344,20 @@
               <a href="https://www.youtube.com/@scapets/featured" target="_blank">
                 <img src="assets/img/youtube.svg" alt="Ícone YouTube">
               </a>
+              <a href="https://www.linkedin.com/company/scapets-brasil/" target="_blank">
+                <img src="assets/img/linkedin.svg" alt="Ícone Linkedin">
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="whatsapp">
+    <div id="whatsapp-icon">
+      <a href="https://api.whatsapp.com/send?text=(Mensagem para enviar)&phone=+55(resto do número)" target="_blank" data-message="Mensagem" data-number="Número de Celular">
+      <img src="assets/img/whatsapp_snippet.svg" alt="Whatsapp Snippet"></a>
     </div>
   </section>
 

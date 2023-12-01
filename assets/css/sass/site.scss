@@ -74,6 +74,13 @@ p{
 	line-height: 182.6%;
 	color: $cinza;
 }
+.bt-area.bt-menu {
+	display: inline-table;
+	position: absolute;
+	left: 70.4rem;
+	top: 3mm;
+}
+
 .bt-parceiro{
 	background: $amarelo;
 	border: 2px solid #fcc90f;
@@ -83,29 +90,91 @@ p{
 	padding: 10px 20px;
 	border-radius: 5px;
 	display: inline-block;
+}
+
+.bt-parceiro.panel-title {
+    width: 270px !important;
+    height: 48px !important;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 16px !important;
+}
+
+.bt-parceiro.list-group-item.segundo-bt {
+	background: $azul;
+	border: 2px solid $amarelo;
+	color: $amarelo !important;
 	&:hover{
-		border: 2px solid #fcc90f;
+		border: 2px solid $amarelo;
+		color: $azul !important;
 		background: none;
-		color: #fcc90f !important;
 	}
+}
+
+.list-group.d-none.d-lg-block {
+	position: relative;
+	left: 24px;
+	text-align: center;
+	width: 84%;
+	background-color: #fff;
+	top: -66px;
+	z-index: -1;
+	height: 15rem;
+	border-radius: 26px;
+}
+
+.bt {
+    top: 65px;
+    position: absolute;
+    width: 100%;
+}
+
+.bt li {
+    margin: 8px;
+}
+
+.bt-parceiro.list-group-item {
+    width: 80%;
+	text-align: left;
+	padding: 10px 4px 10px 4px !important;
+	border-color: $azul;
+}
+
+.bt-img {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 8px;
+	top: 1px;
+}
+
+.panel-collapse.collapse.parceirias {
+	position: relative;
+	z-index: -8;
 }
 nav{
 	margin-top: 15px;
     position: absolute;
     z-index: 100;
 	width: 100%;
-	.menu{
+	nav .menu {
+		width: 100%;
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
+		align-items: end;
+		.marca img {
+			height: 56px;
+		}
 		.itens-menu{
-			ul{
-				li{
-					display: inline-block;
-					padding: 0 12px;
+			display: flex;
+			ul {
+				display: flex;
+				gap: 92px;
+				li {
+						display: flex;
 					a{
 						color: white;
-						font-size: 16px;
+						font-size: 20px;
 						&:hover{
 							color: $amarelo
 						}
@@ -132,6 +201,12 @@ header{
 		bottom: -80px;
 		right: -300px;
 		z-index: 1;
+	}
+	.col-lg-7.col-md-12 {
+		margin-left: -112px;
+	}
+	.row.col-md-12 {
+		margin-left: -11rem;
 	}
 	.info-header{
 		margin-top: 200px;
@@ -174,6 +249,16 @@ header{
 					background: #004675;
 				}
 			}
+		}
+	}
+	.home-video {
+		position: absolute;
+		top: 188px;
+		right: 103px;
+		video {
+			width: 18.5cm;
+			border: 4px solid #ffc107;
+			border-radius: 20px;
 		}
 	}
 }
@@ -223,6 +308,14 @@ header{
 		margin-top: 50px;
 		position: relative;
 		z-index: 1;	
+	}
+	.col-md-12.text-right {
+		position: absolute;
+		top: 1204px;
+		right: 28px;
+		img {
+			width: 24cm;
+		}
 	}
 }
 #beneficios{
@@ -445,6 +538,28 @@ h4{
 	}
 }
 
+#whatsapp {
+	position: fixed;
+	bottom: 20px;
+	left: 30px;
+	width: 90px;
+	height: 90px;
+	background-color: #1ADB44;
+	border-radius: 25px;
+	z-index: 1;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	border: white solid 4px;
+	#whatsapp-icon {
+		img {
+			width: 48px;
+			height: 48px;
+		}
+	}
+}
+
 .overlay {
 	height: 0%;
 	width: 100%;
@@ -533,6 +648,11 @@ h4{
 		.mockups-duvidas{
 			right: -200px;
 		}
+	}
+	#whatsapp,
+	#whatsapp #whatsapp-icon img {
+	width:64px;
+	height:64px
 	}
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -742,4 +862,12 @@ h4{
 			flex-wrap: wrap;
 		}
 	}
+}
+
+.itens_menu {
+	transition: 300ms ease-in-out;
+}
+
+.itens_menu:hover {
+	color: #fcc90f!important;
 }

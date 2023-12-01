@@ -1,0 +1,69 @@
+body,
+html {
+    background-color: #DBE7F2;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrossel {
+    border: 2px solid #0669AB;
+    background-color: white;
+    width: 55%;
+    height: 55%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    animation-fill-mode: forwards;
+}
+
+.imagem-carrossel1 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.imagem-carrossel2 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.imagem-carrossel3 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.imagem-carrossel4 {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.icon-seta {
+    height: 50px;
+    width: 50px;
+}
+
+.icon-seta:hover {
+    cursor: pointer;
+}

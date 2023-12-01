@@ -1,0 +1,134 @@
+body {
+    background-color: #0563A1;
+    color: white;
+}
+
+.logoScapets{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.navbar {
+    background-color: #0563A1;
+}
+.navbar-brand, .nav-link {
+    color: white;
+}
+
+.nav-item {
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color: #FCC90F;
+}
+
+.comentario1Administracao {
+    margin-top: 100px ;
+    margin-bottom: 0px;
+    background-color: white;
+    margin-left: 25%;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: 20px 15px 15px;
+    border-radius: 10px;
+}
+
+.comentario1Administracao p {
+    color: #0563A1;
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 25px;
+}
+
+.comentario1Parceiro {
+    margin-top: 50px ;
+    margin-bottom: 35px;
+    background-color: #FCC90F;
+    margin-left: 25%;
+    width: 45%;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+.comentario1Parceiro p {
+    color: #0563A1;
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 25px;
+}
+
+.perfilFoto{
+    padding: 0;
+    margin: 0;
+    content: none;
+}
+
+.perfilFoto img {
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    left: 450px;
+    top: 65px;
+}
+.perfilFoto p {
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    left: 480px;
+    top: 50px;
+    color: #FCC90F;
+}
+
+.enviarComentarioAdmin {
+    margin-top: 100px ;
+    margin-bottom: 0px;
+    background-color: white;
+    margin-left: 25%;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding: 20px 15px 15px;
+    border-radius: 50px;
+}
+
+
+.yellow-button {
+    background-color: #0563A1;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 60px;
+    left: 1050px;
+    transition: 150ms ease-in-out;
+}
+.yellow-button:hover{
+    background-color: #FCC90F ;
+
+}
+
+
+#feedback{
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }

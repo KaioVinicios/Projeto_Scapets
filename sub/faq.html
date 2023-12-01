@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ - PERGUNTAS FREQUENTES</title>
+    <link rel="stylesheet" href="../assets/css/faq.css">
+</head>
+<body class="faq">
+
+    <nav data-aos="fade-down">
+        <div class="container">
+            <div class="row col-md-12">
+                <div class="menu">
+                    <a href="../index.php"><img src="../assets/img/marca.png" alt="Marca Scapets"></a>
+                    <div class="itens-menu">
+                        <ul>
+                            <li>
+                                <a href="quemsomos.html" class="itens_menu">Sobre a Scapets</a>
+                            </li>
+                            <li>
+                                <a href="feedback.html" class="itens_menu">Dê o seu Feedback</a>
+                            </li>
+                            <li>
+                                <a href="reels.html" class="itens_menu">Reels</a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <section id="bt-menu">
+                        <a id="menu-collapse">
+                            <h4 class="bt-parceiro panel-title">Quero Ser Parceiro!</h4>
+                        </a>
+                        <div id="button-list" class="bt-list hidden">
+                            <ul class="list-group d-none d-lg-block">
+                                <div class="bt">
+                                    <li>
+                                        <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro list-group-item">Lojista<img src="../assets/img/store_icon.svg" class="bt-img"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro list-group-item segundo-bt">Motoboy<img src="../assets/img/motorcycle_icon.svg" class="bt-img"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://web.scapets.com.br/pre-cadastro" rel="noopener" target="_blank" class="bt-parceiro list-group-item">Administrador<img src="../assets/img/admin_icon.svg" class="bt-img"></a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </section> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h3>F A Q</h3>
+    <h1>Perguntas frequentes</h1>
+
+    <div class="search-bar">
+        <span class="search-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" alt="Ícone Lupa">
+        </span>
+        <input type="text" id="search-input" placeholder="" onkeyup="searchFAQ()">
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item" onclick="toggleAnswer('answer1')">
+            <h2>Quanto de exercício meu pet precisa diariamente?</h2>
+            <div id="answer1" class="answer">
+                <strong>O nível de atividade varia de acordo com a raça e idade, mas em geral, cães precisam de pelo menos 30 minutos a 2 horas de exercício diário, enquanto gatos se beneficiam de brincadeiras ativas por cerca de 15-30 minutos.</strong>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('answer2')">
+            <h2>Qual é a melhor alimentação para meu pet?</h2>
+            <div id="answer2" class="answer">
+                <strong> Consulte o veterinário para uma dieta personalizada. Em geral, ofereça alimentos balanceados e de qualidade, adequados à idade, tamanho e necessidades específicas de saúde do seu pet.</strong>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('answer3')">
+            <h2>Como posso prevenir pulgas e carrapatos no meu pet?</h2>
+            <div id="answer3" class="answer">
+                <strong>Use produtos antiparasitários recomendados pelo veterinário, mantenha o ambiente limpo, e verifique regularmente o pelo do seu pet. Banhos frequentes e limpeza do ambiente também ajudam na prevenção.</strong>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('answer4')">
+            <h2>Quais vacinas são essenciais para meu pet?</h2>
+            <div id="answer4" class="answer">
+                <strong> As vacinas variam de acordo com a espécie e a região, mas geralmente incluem proteção contra doenças como raiva, parvovirose, cinomose (em cães) e rinotraqueíte, calicivirose e panleucopenia (em gatos).</strong>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('answer5')">
+            <h2>Como lidar com a ansiedade de separação do meu pet?</h2>
+            <div id="answer5" class="answer">
+                <strong>Introduza períodos curtos de ausência, forneça brinquedos e enriquecimento ambiental, e treine seu pet gradualmente para se acostumar com a separação. Consulte um profissional se a ansiedade persistir.</strong>
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('answer6')">
+            <h2>Com que frequência devo levar meu pet ao veterinário?</h2>
+            <div id="answer6" class="answer">
+                <strong> Recomenda-se check-ups anuais para pets saudáveis. Animais mais velhos ou com condições médicas podem precisar de consultas mais frequentes.</strong>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+
+    <section id="copyright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer">
+                        <div class="documentos">
+                            <a href="../assets/img/documentos/TERMOS-E-CONDICOES-DE-USO-SCAPETS.pdf" target="_blank">
+                                Termos e Condições de Uso Scapets
+                            </a>
+                            <a href="../assets/img/documentos/POLITICA-DE-PRIVACIDADE-SCAPETS.pdf" target="_blank">
+                                Política de Privacidade Scapets
+                            </a>
+                            <a href="../assets/img/documentos/POLITICA_DE_TROCAS_E_DEVOLUCOES_SCAPETS.pdf" target="_blank">
+                                Política de Trocas e Devoluções
+                            </a>
+                        </div>
+                        <div class="redes-sociais">
+                            <a href="https://www.facebook.com/people/scapetsbrasil/100087157000626" target="_blank">
+                                <img src="../assets/img/facebook.svg" alt="Ícone Facebook">
+                            </a>
+                            <a href="https://www.instagram.com/scapetsbrasil" target="_blank">
+                                <img src="../assets/img/instagram.svg" alt="Ícone Instagram">
+                            </a>
+                            <a href="https://www.youtube.com/@scapets/featured" target="_blank">
+                                <img src="../assets\img\youtube.svg" alt="Ícone YouTube">
+                            </a>
+                            <a href="https://www.linkedin.com/company/scapets-brasil/" target="_blank">
+                                <img src="../assets/img/linkedin.svg" alt="Ícone Linkedin">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.classList.contains('expanded')) {
+                answer.style.maxHeight = '0';
+                answer.classList.remove('expanded');
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.classList.add('expanded');
+            }
+        }
+
+        function searchFAQ() {
+            var input, filter, faqItems, h2, i, txtValue;
+            input = document.getElementById("search-input");
+            filter = input.value.toLowerCase();
+            faqItems = document.querySelectorAll(".faq-item");
+
+            for (i = 0; i < faqItems.length; i++) {
+                h2 = faqItems[i].getElementsByTagName("h2")[0];
+                txtValue = h2.textContent || h2.innerText;
+
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    faqItems[i].style.display = "block";
+                } else {
+                    faqItems[i].style.display = "none";
+                }
+            }
+        }
+
+      
+
+        class collapse {
+            constructor(triggerId, targetIds) {
+                this.triggerId = triggerId;
+                this.targetId = targetIds;
+
+                this.triggerId.addEventListener('click', () => this.collapses());
+            }
+
+            collapses() {
+                this.targetId.forEach(element => element.classList.toggle('hidden'));
+            }
+        }
+
+        function makeCollapse(triggerId, targetIds) {
+            var triggerElement = document.getElementById(triggerId);
+            var targetElements = targetIds.map(id => document.getElementById(id));
+
+            new collapse(triggerElement, targetElements);
+        }
+
+        makeCollapse('menu-collapse', ['button-list']);
+    </script>
+</body>
+</html>
